@@ -1,0 +1,145 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+  color: rgb(27, 27, 27);
+  background-color: rgb(242, 242, 242);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin-left: 1rem;
+}
+
+li {
+  line-height: 1.7;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.knowledge,
+.languages {
+  list-style-type: none;
+  line-height: 1.7;
+}
+
+header {
+  max-width: 80rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+  margin: 1rem auto;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.name h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+.name img {
+  margin: 0;
+  border-radius: 0.2rem;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: start;
+  gap: 0.3rem 1rem;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 32rem;
+}
+
+.category {
+  padding: 0 0.8rem;
+}
+
+.category-title {
+  margin: 2rem 0;
+  display: flex;
+  align-items: end;
+  gap: 0.8rem;
+}
+
+.item {
+  margin: 2.5rem 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(83, 83, 83);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(27, 27, 27);
+}
+
+footer {
+  font-size: 0.8rem;
+  text-align: center;
+}
+/*
+MEDIA 
+*/
+
+@media (max-width: 900px) {
+  .name h1 {
+    font-size: 3rem;
+  }
+
+  .profile {
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    display: grid;
+    justify-content: center;
+    gap: 0.5rem 0;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .name h1 {
+    margin: auto;
+  }
+
+  .profile-container {
+    /* grid-column: span 2; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .name h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+}
